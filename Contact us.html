@@ -39,21 +39,23 @@
     <p>We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.</p>
 <form>
   First Name:<br>
-  <input type="text" name="firstname" placeholder="Enter your first name"><br><br>
+  <input type="text" name="firstname" placeholder="Enter your first name" required><br><br>
 
   Last Name:<br>
-  <input type="text" name="lastname" placeholder="Enter your last name"><br><br>
+  <input type="text" name="lastname" placeholder="Enter your last name" required><br><br>
 
   Email:<br>
   <input type="email" name="email" placeholder="Enter your email"><br><br>
 
   Phone Number:<br>
-  <input type="tel" name="phone" placeholder="Enter your phone number"><br><br>
+  <input type="tel" name="phone" placeholder="Enter your phone number" required><br><br>
 
   Gender:<br>
-  <input type="radio" name="gender" value="Male"> Male
-  <input type="radio" name="gender" value="Female"> Female<br><br>
-
+  <input type="radio" name="gender" value="Male" id="1">
+  <label for="1">Male</label>
+  <input type="radio" name="gender" value="Female" id="2">
+    <label for="2">Female</label>
+<br><br>
   Reason for Contact:<br>
   <select name="reason">
     <option>General Question</option>
@@ -67,6 +69,6 @@
   <input type="submit" value="Send Message">
 </form></font></b>
 <br><br>
-<a href="./index.html">Go Back To Home Page</a>
+<a target="_blank" href="./index.html">Go Back To Home Page</a>
 </body>
 </html>
